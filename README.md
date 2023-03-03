@@ -14,7 +14,7 @@ You’ll create an application that provides the time of day and then build it w
 + [Install Maven on Linux](https://www.baeldung.com/install-maven-on-windows-linux-mac#installing-maven-on-linux)
 + [Install Maven on Mac OSX](https://www.baeldung.com/install-maven-on-windows-linux-mac#installing-maven-on-mac-os-x)
 
-## Set up the projects
+## Set up the project
 First you’ll need to setup a Java project for Maven to build. To keep the focus on Maven, make the project as simple as possible for now.
 
 #### Create the directory structures
