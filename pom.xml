@@ -16,7 +16,7 @@
      
 
       <dependencies>
-           <dependency>
+           <dependencies>
                <groupId>joda-time</groupId>
                <artifactId>joda-time</artifactId>
                <version>2.2</version>
