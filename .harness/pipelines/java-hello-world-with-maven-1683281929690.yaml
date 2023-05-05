@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_java_hello_world_with_maven_1683281932125
+  name: Build java-hello-world-with-maven
+  orgIdentifier: default
+  projectIdentifier: kk
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1683264176974
+        repoName: poorna162/java-hello-world-with-maven
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
