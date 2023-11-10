@@ -16,3 +16,14 @@ pipeline{
         }
     }
 }
+stage('Snyk Test') {
+            steps {
+                echo 'Snyk Testing...'
+                snykSecurity (
+                    projectName: 'poorna162', 
+                    snykInstallation: 'snyk@latest', 
+                    snykTokenId: 'snykapi',
+                    failOnIssues: false
+                )
+            }
+        } 
